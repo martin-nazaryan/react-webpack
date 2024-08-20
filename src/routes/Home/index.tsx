@@ -69,7 +69,7 @@ const Home: FC = () => {
 
                 <Input placeholder="Title" {...register('title')} />
 
-                <FormText>{errors.title && <p>{errors.title.message}</p>}</FormText>
+                <FormText className="text-red-500">{errors.title && errors.title.message}</FormText>
               </FormControl>
             </FormGroup>
 
